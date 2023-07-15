@@ -18,3 +18,4 @@ int main(void)
 	}
 	outchar('\n');
 	return (0);
+}
