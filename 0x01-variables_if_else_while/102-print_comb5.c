@@ -22,7 +22,7 @@ int main(void)
 				putchar((firstDigit % 10) + 48);
 				putchar(' ');
 				putchar((secondDigit / 10) + 48);
-				putchar((secondDigit / 10) + 48);
+				putchar((secondDigit % 10) + 48);
 
 				if (firstDigit != 98 || secondDigit != 99)
 				{
