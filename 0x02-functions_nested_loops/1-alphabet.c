@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_alphabet - uses the _putchar function to print the alphabet
  */
 
 void print_alphabet(void)
