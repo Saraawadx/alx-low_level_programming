@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_sign - prints + if n is greater than zero,
  *               0 is n is zero and - if n is less than zero
@@ -17,7 +18,6 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-
 		-putchar(48);
 		return (0);
 	}
