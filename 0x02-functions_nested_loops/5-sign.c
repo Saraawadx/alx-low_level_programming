@@ -2,18 +2,29 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_sign - prints + if n is greater than zero,
+ * 0 is n is zero and - if n is less than zero
  *
- * Return: Always 0.
+ * @n: takes integer type input for function
+ *
+ * Return: 1 if +, 0 if  0 and -1 if -
  */
-int main(void)
-{
-	int r;
 
-	r = print_sign(98);
-	if (r < 0)
-		r *= -1;
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		_putchar(43);
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(48);
+		return (0);
+	}
+	else
+	{
+		_putchar(45);
+		return (-1);
+	}
 }
