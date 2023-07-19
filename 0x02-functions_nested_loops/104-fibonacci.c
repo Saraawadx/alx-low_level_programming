@@ -18,7 +18,7 @@ int num_length(int num)
 	while (num)
 	{
 		num = num / 10;
-		length += 1'
+		length += 1;
 	}
 
 	return (length);
@@ -46,7 +46,7 @@ int main(void)
 			printf("%d", 0);
 			initial0s--;
 		}
-		
+
 		printf("%lu", f1);
 
 		sum = (f1 + f2) % mx;
