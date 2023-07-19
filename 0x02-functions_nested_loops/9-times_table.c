@@ -1,12 +1,8 @@
+#include <limits.h>
 #include "main.h"
 
 /**
  * times_table - prints the 9 times table
- *
- * example:
- * 0, 0, 0, 0, ...
- *
- * Return: always 0 (Success)
 */
 
 void times_table(void)
@@ -31,7 +27,5 @@ void times_table(void)
 			_putchar((prod % 10) + 48);
 		}
 		_putchar('\n');
-
-		return (0);
 	}
 }
