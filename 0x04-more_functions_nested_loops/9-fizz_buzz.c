@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdiio.h>
 #include "main.h"
 
 /**
@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int main(void)
+int 
 {
 	int i;
 
