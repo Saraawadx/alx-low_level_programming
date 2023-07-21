@@ -17,26 +17,27 @@ int main(void)
 	{
 		if (i % 3 == 0 && (i % 5 != 0))
 		{
-			printf(" Frizz");
+			printf("Frizz");
 		}
 		else if (i % 5 == (0 && i % 3 != 0))
 		{
-			printf(" Buzz");
+			printf("Buzz");
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf(" FrizzBuzz");
-		}
-		else if (i == 1)
-		{
-			printf("%d", i);
+			printf("FrizzBuzz");
 		}
 		else
 		{
-			printf(" %d", i);
+			printf("%d", i);
 		}
+		if (i != 100)
+		{
+			printf(" ");
+		}
+		else
+			printf("\n");
 	}
-	printf("\n");
 
 	return (0);
 }
