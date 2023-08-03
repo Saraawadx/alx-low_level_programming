@@ -6,7 +6,7 @@
  * Return: pointer
 */
 
-char star(char *s2)
+char *star(char *s2)
 {
 	if (*s2 == '*')
 		return (star(s2 + 1));
@@ -29,7 +29,7 @@ int inception(char *s1, char *s2)
 		return (0);
 	if (*s1 == *s2)
 		r += wildcmp(s1 + 1, s2 + 1);
-	r += inception(s1 + 1, s2)
+	r += inception(s1 + 1, s2);
 		return (r);
 }
 
@@ -44,13 +44,13 @@ int wildcmp(char *s1, char *s2)
 {
 	int r = 0;
 
-	if (!*s && *s2 == '*' && !star(s2))
+	if (!*s1 && *s2 == '*' && !star(s2))
 		return (1);
 	if (*s1 == *s2)
 	{
 		if (!*s1)
 			return (1);
-		return (wildcmp(s1 + 1, *s == '*' ? s2 : s2 + 1));
+		return (wildcmp(s1 + 1, *s2 == '*' ? s2 : s2 + 1));
 	}
 	if (!*s1 || !s2)
 		return (0);
