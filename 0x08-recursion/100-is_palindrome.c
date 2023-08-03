@@ -19,6 +19,9 @@ int last_index(char *s)
 /**
  * is_palindrome - returns 1 if a string is a palindrome and 0 if not
  * @s: string
+ * @start: int
+ * @end: int
+ * @mod: int
  * Return: 0 or 1
 */
 
@@ -35,6 +38,7 @@ int is_palindrome(char *s)
  * @s: string
  * @start: int
  * @end: int
+ * @mod: int
  * Return: 0 or 1
 */
 
