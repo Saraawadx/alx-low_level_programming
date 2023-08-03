@@ -6,7 +6,6 @@
  * Return: int
 */
 int is_palindrome(char *s);
-int check(char *s, int start, int end, int mod);
 int last_index(char *s)
 {
 	int n = 0;
@@ -23,6 +22,7 @@ int last_index(char *s)
  * Return: 0 or 1
 */
 
+int check(char *s, int start, int end, int mod);
 int is_palindrome(char *s)
 {
 	int end = last_index(s);
@@ -38,7 +38,7 @@ int is_palindrome(char *s)
  * Return: 0 or 1
 */
 
-int check(char *s, int start, int end)
+int check(char *s, int start, int end, int mod)
 {
 	if ((start == end && mod != 0) || (start == end + 1 && mod == 0))
 		return (1);
