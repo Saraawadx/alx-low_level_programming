@@ -16,7 +16,7 @@ int wordcount(char *s)
 		if (s[i] == ' ')
 		{
 			if (s[i + 1] != ' ' && s[i + 1] != '\0')
-				n++
+				n++;
 		}
 		else if (i == 0)
 			n++;
@@ -41,7 +41,7 @@ char **strtow(char *str)
 	m = wordcount(str);
 	if (m == 1)
 		return (NULL);
-	w = (char **)malloc(n * sizeof(char *));
+	w = (char **)malloc(m * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
 	w[m - 1] = NULL;
