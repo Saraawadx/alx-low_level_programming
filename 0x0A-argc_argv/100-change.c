@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-		printf("%d\n", minch)
+		printf("%d\n", minch);
 	}
 	else
 	{
