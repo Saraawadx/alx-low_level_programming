@@ -9,13 +9,13 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum = 0;
+	int sum = 0, i = n;
 	va_list pt;
 
 	if (n == 0)
 		return (0);
 	va_start(pt, n);
-	while (n--)
+	while (i--)
 		sum += va_arg(pt, int);
 	va_end(pt);
 
