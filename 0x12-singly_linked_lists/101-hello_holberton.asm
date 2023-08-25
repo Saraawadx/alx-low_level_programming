@@ -7,4 +7,4 @@ main:
 	call	printf
 
 section		.data
-	sar db 'Hello, Holberton', 0xa, 0
+	sar db 'Hello, Holberton$', 0xa, 0
