@@ -3,9 +3,9 @@ section		.text
 	global	main
 main:
 	mov		edi, msg
+	xor		eax, eax
+	call		printf
 	mov		eax, 0
-	mov		DL, 0AH
-	call	printf
 
 section		.data
-	msg db 'Hello, Holberton$', 0xa, 0
+	msg db 'Hello, Holberton\n', 0
