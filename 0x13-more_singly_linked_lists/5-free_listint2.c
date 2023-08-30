@@ -10,6 +10,9 @@ void free_listint2(listint_t **head)
 {
 	listint_t *ptrNode, *tmpNode;
 
+	if (head == NULL)
+		return;
+
 	ptrNode = *head;
 	while (head)
 	{
