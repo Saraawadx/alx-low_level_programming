@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		_putchar("%d\n", h->n);
+		_putchar(h->n);
 		h = h->next;
 		size++;
 	}
