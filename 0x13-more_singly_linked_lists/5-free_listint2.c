@@ -8,9 +8,9 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *ptrNode, tmpNode;
+	listint_t *ptrNode, *tmpNode;
 
-	ptrNode = *head
+	ptrNode = *head;
 	while (head)
 	{
 		tmpNode = ptrNode;
