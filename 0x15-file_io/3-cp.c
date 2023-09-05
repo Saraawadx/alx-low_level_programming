@@ -25,24 +25,24 @@ int main(int ac, char **av)
 	if (file_to == -1)
 		dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n"
-				, av[2]), exit(99);
+				, av[2]), free(BUFFER), exit(99);
 
 	while ((size = read(file_from, BUFFER, READ_BUFFER_SIZE)) > 0)
 		if (write(file_to, BUFFER, size) != size)
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n"
-				, av[2]), exit(99);
+				, av[2]), free(BUFFER), exit(99);
 	if (size == -1)
 		dprintf(STDERR_FILENO,
 			"Error: Can't read from file %s\n"
-			, av[1]), exit(98);
+			, av[1]), free(BUFFER), exit(98);
 	file_from = close(file_from);
 	file_to = close(file_to);
 	if (file_from)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from),
-			exit(100);
+			free(BUFFER), exit(100);
 	if (file_to)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to),
-			exit(100);
+			free(BUFFER), exit(100);
 	return (1);
 }
